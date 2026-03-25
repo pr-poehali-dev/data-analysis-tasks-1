@@ -44,22 +44,21 @@ export function Contact() {
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              Контакты
+              Напишите нам
             </p>
             <h2
               className={`font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-8 text-balance transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Готовы начать?
+              Расскажите о себе
             </h2>
             <p
               className={`text-muted-foreground leading-relaxed mb-12 max-w-md transition-all duration-1000 delay-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}
             >
-              Каждое осмысленное пространство начинается с разговора. Расскажите о вашем видении,
-              и мы вместе найдём способ воплотить его в жизнь.
+              Хотите задать вопрос, уточнить размер или обсудить индивидуальный заказ? Мы ответим в течение дня и поможем найти идеальную вещь.
             </p>
 
             {/* Contact Info */}
@@ -70,13 +69,17 @@ export function Contact() {
             >
               <div>
                 <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Почта</p>
-                <a href="mailto:hello@example.com" className="text-foreground hover:text-sage transition-colors">
-                  hello@example.com
+                <a href="mailto:hello@lumiere.ru" className="text-foreground hover:text-sage transition-colors">
+                  hello@lumiere.ru
                 </a>
               </div>
               <div>
-                <p className="text-xs tracking-widest uppercase text-muted-foreground mb-2">Локация</p>
-                <p className="text-foreground">Москва и Санкт-Петербург</p>
+                <p className="text-xs tracking-widests uppercase text-muted-foreground mb-2">Telegram</p>
+                <a href="#" className="text-foreground hover:text-sage transition-colors">@lumiere_brand</a>
+              </div>
+              <div>
+                <p className="text-xs tracking-widests uppercase text-muted-foreground mb-2">Доставка</p>
+                <p className="text-foreground">По России и миру</p>
               </div>
             </div>
           </div>
@@ -126,7 +129,7 @@ export function Contact() {
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
                   rows={4}
                   className="w-full bg-transparent border-b border-border py-3 text-foreground placeholder:text-muted-foreground/50 focus:border-sage focus:outline-none transition-colors resize-none"
-                  placeholder="Расскажите о вашем проекте..."
+                  placeholder="Расскажите, что вас интересует..."
                   required
                 />
               </div>
